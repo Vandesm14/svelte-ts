@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  let count: number = 0;
+
+  function handleClick() {
+    count += 1;
+  }
+</script>
+
+<h1>Hello world!</h1>
+<button on:click={handleClick}>Clicked {count} times</button>
