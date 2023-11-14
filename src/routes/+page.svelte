@@ -1,4 +1,6 @@
 <script lang="ts">
+  import '../style.css';
+
   let count: number = 0;
 
   function handleClick() {
